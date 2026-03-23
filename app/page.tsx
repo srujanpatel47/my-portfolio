@@ -280,7 +280,7 @@ export default function Home() {
             {projects.map((project) => (
               <div
                 key={project.title}
-                className="rounded-3xl bg-white border border-slate-200 shadow-sm p-8 md:p-10 hover:shadow-md transition"
+                className="rounded-3xl bg-white border border-slate-200 shadow-sm p-8 md:p-10 hover:shadow-lg hover:-translate-y-1 transition"
               >
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
                   <div className="max-w-3xl">
