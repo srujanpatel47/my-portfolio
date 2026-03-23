@@ -54,7 +54,7 @@ export default function Home() {
         "Impact: Reduced solving time by ~25–35% and significantly lowered node exploration across algorithms.",
       ],
       stack: ["Python", "TensorFlow", "NumPy", "Google Colab", "Algorithms"],
-      github: "https://github.com/srujanpatel47",
+      github: "https://github.com/srujanpatel47/AI-powered-Sudoku-solver",
     },
     {
       title: "Affordable Housing in Ontario",
