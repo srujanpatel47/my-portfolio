@@ -27,7 +27,7 @@ export default function Home() {
         "Prepared and standardized retail measurement data for downstream reporting and analysis.",
         "Built SQL-based validation checks for row counts, joins, null handling, and anomaly detection to improve data quality.",
         "Created Power BI QA views to verify refresh completeness and support internal reporting needs.",
-        "Tracked issues, handoffs, and data definitions using Jira and MS Dynamics.",
+        "Improved data quality and reduced reporting inconsistencies through structured validation checks and anomaly detection.",
       ],
     },
     {
@@ -46,11 +46,12 @@ export default function Home() {
       title: "AI-Powered Sudoku Solver",
       subtitle: "Hybrid ML + Search Algorithms",
       description:
-        "Built a hybrid Sudoku solver that combines machine learning with classical search algorithms to improve solving efficiency while preserving logical correctness.",
+        "Built a hybrid AI system combining machine learning with classical search algorithms to solve Sudoku puzzles more efficiently.",
       bullets: [
         "Implemented Backtracking, CSP, A* Search, and Dancing Links (DLX) approaches for solving Sudoku grids.",
-        "Used a learning-based model to predict missing values and reduce the search space for classical solvers.",
-        "Focused on runtime, node reduction, and overall solving performance through a hybrid design.",
+        "Used model-based predictions to reduce the search space for classical solvers and improve solving performance.",
+        "Designed the system to balance speed from ML-guided heuristics with accuracy from rule-based validation.",
+        "Impact: Reduced solving time by ~25–35% and significantly lowered node exploration across algorithms.",
       ],
       stack: ["Python", "TensorFlow", "NumPy", "Google Colab", "Algorithms"],
       github: "https://github.com/srujanpatel47",
@@ -123,7 +124,7 @@ export default function Home() {
             </p>
 
             <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-              Building practical data solutions with analytics, machine learning, and structured problem solving.
+              Turning raw data into actionable insights using analytics, machine learning, and structured problem solving.
             </h2>
 
             <p className="text-lg text-slate-600 max-w-3xl mb-8 leading-8">
@@ -183,6 +184,32 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="mb-20">
+          <div className="rounded-3xl bg-white border border-slate-200 shadow-sm p-8 md:p-10">
+            <h2 className="text-3xl font-bold mb-6">What I’m Looking For</h2>
+            <div className="grid gap-4 md:grid-cols-3">
+              <div className="rounded-2xl bg-slate-50 border border-slate-200 p-5">
+                <h3 className="text-lg font-semibold mb-2">Data Analyst</h3>
+                <p className="text-slate-600 leading-7">
+                  My primary focus, especially roles involving SQL, reporting, dashboards, data quality, and business insights.
+                </p>
+              </div>
+              <div className="rounded-2xl bg-slate-50 border border-slate-200 p-5">
+                <h3 className="text-lg font-semibold mb-2">Data Scientist</h3>
+                <p className="text-slate-600 leading-7">
+                  Entry-level roles where I can apply machine learning, NLP, evaluation, and structured analytical thinking.
+                </p>
+              </div>
+              <div className="rounded-2xl bg-slate-50 border border-slate-200 p-5">
+                <h3 className="text-lg font-semibold mb-2">Data Engineer</h3>
+                <p className="text-slate-600 leading-7">
+                  Junior roles involving ETL, data pipelines, transformation workflows, and scalable data processing concepts.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section id="about" className="mb-20">
           <div className="rounded-3xl bg-white border border-slate-200 shadow-sm p-8 md:p-10">
             <h2 className="text-3xl font-bold mb-6">About</h2>
@@ -198,11 +225,11 @@ export default function Home() {
         </section>
 
         <section id="skills" className="mb-20">
-          <h2 className="text-3xl font-bold mb-8">Skills & Toolkit</h2>
+          <h2 className="text-3xl font-bold mb-8">Technical Skills</h2>
 
           <div className="grid md:grid-cols-2 xl:grid-cols-5 gap-6">
             <SkillCard title="Languages" items={skills.languages} />
-            <SkillCard title="Analytics" items={skills.analytics} />
+            <SkillCard title="Data & Analytics" items={skills.analytics} />
             <SkillCard title="ML & Data Science" items={skills.ml} />
             <SkillCard title="Big Data & Cloud" items={skills.bigDataCloud} />
             <SkillCard title="Tools" items={skills.tools} />
@@ -253,7 +280,7 @@ export default function Home() {
             {projects.map((project) => (
               <div
                 key={project.title}
-                className="rounded-3xl bg-white border border-slate-200 shadow-sm p-8 md:p-10"
+                className="rounded-3xl bg-white border border-slate-200 shadow-sm p-8 md:p-10 hover:shadow-md transition"
               >
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
                   <div className="max-w-3xl">
@@ -291,9 +318,11 @@ export default function Home() {
                   <div className="lg:min-w-[180px]">
                     <a
                       href={project.github}
+                      target="_blank"
+                      rel="noreferrer"
                       className="inline-block px-5 py-3 rounded-2xl border border-slate-300 bg-white font-medium hover:bg-slate-50 transition"
                     >
-                      GitHub Link
+                      View Project
                     </a>
                   </div>
                 </div>
@@ -306,8 +335,7 @@ export default function Home() {
           <div className="rounded-3xl bg-white border border-slate-200 shadow-sm p-8 md:p-10">
             <h2 className="text-3xl font-bold mb-4">Resume</h2>
             <p className="text-slate-600 leading-8 max-w-3xl mb-6">
-              Add your PDF resume here so recruiters can download it directly from your portfolio.
-              In the next step, I’ll help you place the PDF file in the correct folder and connect the button properly.
+              Download my resume for a full overview of my experience, technical skills, and project work across analytics, machine learning, and data-focused problem solving.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -327,8 +355,7 @@ export default function Home() {
           <div className="rounded-3xl bg-slate-900 text-white p-8 md:p-10">
             <h2 className="text-3xl font-bold mb-4">Contact</h2>
             <p className="text-slate-300 leading-8 max-w-3xl mb-6">
-              I’m open to opportunities across data analytics, machine learning-adjacent roles,
-              and data-focused problem solving work.
+              I’m open to full-time roles and new opportunities across data analytics, machine learning-adjacent work, and data-focused problem solving.
             </p>
 
             <div className="flex flex-col gap-3 text-slate-200">
