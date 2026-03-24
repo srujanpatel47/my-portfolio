@@ -2,6 +2,7 @@ export default function Home() {
   const skills = {
     languages: ["Python", "SQL", "R"],
     analytics: ["Power BI", "Excel", "Data Cleaning", "Data Validation", "ETL"],
+    statistics: ["Hypothesis Testing", "Regression Analysis", "Descriptive Statistics", "A/B Testing"],
     ml: ["scikit-learn", "NumPy", "Pandas", "NLP", "Model Evaluation", "Machine Learning"],
     bigDataCloud: ["Apache Spark", "Hadoop", "AWS", "GCP"],
     tools: ["Git", "Flask", "Jira", "MS Dynamics", "Heroku"],
@@ -227,9 +228,10 @@ export default function Home() {
         <section id="skills" className="mb-20">
           <h2 className="text-3xl font-bold mb-8">Technical Skills</h2>
 
-          <div className="grid md:grid-cols-2 xl:grid-cols-5 gap-6">
+          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
             <SkillCard title="Languages" items={skills.languages} />
             <SkillCard title="Data & Analytics" items={skills.analytics} />
+            <SkillCard title="Statistical Analysis" items={skills.statistics} />
             <SkillCard title="ML & Data Science" items={skills.ml} />
             <SkillCard title="Big Data & Cloud" items={skills.bigDataCloud} />
             <SkillCard title="Tools" items={skills.tools} />
